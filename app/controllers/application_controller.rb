@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'pry'
 
 class App < Sinatra::Base
 
@@ -6,7 +7,6 @@ class App < Sinatra::Base
 
     get '/' do
       erb :super_hero
-            binding.pry
     end
 
     post '/' do
