@@ -11,7 +11,7 @@ class App < Sinatra::Base
 
     post '/' do
       erb :team
-      binding.pry
+      @params = params
     end
 
 
