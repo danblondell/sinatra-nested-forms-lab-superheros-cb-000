@@ -3,7 +3,8 @@ class Team < ActiveRecord::Base
 
   def change
     create_table do |t|
+      t.string :name
+      t.string :motto
     end
-    
   end
 end
